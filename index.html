@@ -11,23 +11,62 @@
   <!-- Load Styles -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fml3bvx.css">
+
+  <script src="https://kit.fontawesome.com/30cd679648.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<!-- Add your content here -->
-<h1>Table of Contents</h1>
-<p>Alyssa Herrera</p>
-<p>GRA 322: Technology for Design</p>
-<p>The Design School</p>
-<p>Herberger institute for Design and the Arts</p>
-<P>Arizona State University</p>
-<a href="https://codepen.io/ajherrera" title="CodePen">CodePen</a>
-<ul>
-  <li><p>Project 3</p></li>
-  <li><p>Project 6</p></li>
-</ul>
+  <!-- Add your content here -->
 
-<!-- Load Scripts -->
-<script src="js/scripts.js"></script>
+  <div class="nav">
+    <a href="#"><img class="logo" src="https://i.imgur.com/REU3i0l.png" alt="Alyssa Herrera"></img></a>
+    <a class="hamburger" href="#"><i class="fa-solid fa-bars"></i></a>
+    <p class="nav-link"><a href="https://codepen.io/ajherrera" title="CodePen">CodePen</a></p>
+    <p class="nav-link" id="#portfolio"><a href="https://codepen.io/ajherrera" title="CodePen">Portfolio</a></p>
+  </div>
+
+  <section class="table-of-contents">
+    <h1>Table of Contents</h1>
+
+    <div class="toc-items">
+      <div class="toc">
+        <p class="icon less-space-btm"><i class="fa-regular fa-sun"></i></p>
+        <h3 class="less-space-btm"><a class="hvr-underline-from-left" href="#">Project 3</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="toc">
+        <p class="icon less-space-btm"><i class="fa-regular fa-user"></i></p>
+        <h3 class="less-space-btm"><a class="hvr-underline-from-left" href="#">Project 6</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="toc">
+        <p class="icon less-space-btm"><i class="fa-brands fa-codepen"></i></p>
+        <h3 class="less-space-btm"><a class="hvr-underline-from-left" href="http://codepen.io/ajherrera">My CodePen</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+
+    <div class="grid-item">
+      <h1>About</h1>
+      <p>This project was created with care in ASU’s graphic design program.</p>
+      <p class="yellow-text more-space-top"><strong>GRA 322
+          <br> Technology for Design</strong></p>
+      <p>The Design School</p>
+      <p>Herberger Institute for Design and the Arts</p>
+      <p>Arizona State University</p>
+      <div class="more-space-top">
+        <a class="btn" id="btn1" href="http://asu.edu">ASU</a>
+        <a class="btn" id="btn2" href="http://codepen.io">CodePen</a>
+      </div>
+    </div>
+  </section>
+  <!-- Load Scripts -->
+  <script src="js/scripts.js"></script>
+
 </body>
+
 </html>
