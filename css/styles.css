@@ -137,8 +137,8 @@ body {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #f7ed3f;
-    height: 3px;
+    background: #555;
+    height: 7px;
     -webkit-transition-property: right;
     transition-property: right;
     -webkit-transition-duration: 0.3s;
