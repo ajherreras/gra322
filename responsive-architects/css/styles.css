@@ -1,0 +1,53 @@
+/* 
+Inter weights 400 + 600
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Base styles */
+p {
+    font-size:18px;
+    letter-spacing: 1px;
+}
+
+header {
+    background-image: url('../img/header.jpg');
+    background-size:cover;
+    height: 60vh;
+}
+
+header .inner {
+    margin: 0 auto;
+    max-width:1280px;
+}
+
+nav {
+    display:none;
+}
+
+h1 { 
+    background-color: rgba(255,255,255,0.4);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing:1px;
+    padding:1.5rem;
+    text-transform:uppercase;
+}
+
+.menu-wrapper {
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu-button {
+    border:1px solid transparent;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.intro {
+    text-transform:uppercase;
+    padding: 14rem 1rem 1rem 1rem;
+}
