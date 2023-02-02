@@ -84,7 +84,7 @@ h1 {
     padding: 3rem 1rem;
 }
 
-.featured-work h2 {
+h2 {
     text-transform: uppercase;
     font-weight: 600;
     font-size:16px;
@@ -101,11 +101,40 @@ h1 {
     font-size:14px;
 }
 
+.about {
+    background-color: #fafafa;
+    padding: 2rem 0rem;
+    margin: auto;
+}
+
+
+
+.about p {
+    font-size:15px;
+    border-left: 3px solid #f2f2f2;
+    padding-left: 1rem;
+    font-weight:300;
+    max-width: 800px;
+}
+
+.credits {
+    padding: 1rem;
+}
+
+
 @media screen and (min-width: 600px) {
     .work-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap:1rem;
+    }
+    .about .inner {
+        padding: 3rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    .credits {
+        padding-top: 1.5rem;
     }
 }
 
