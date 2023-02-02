@@ -123,6 +123,7 @@ h2 {
 
 
 @media screen and (min-width: 600px) {
+
     .work-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -137,9 +138,13 @@ h2 {
     .credits .inner {
         padding: 1rem 0rem;
     }
+
 }
 
 @media screen and (min-width:800px) {
+    .intro {
+        max-width: 40%;
+    }
     .menu-button {
         display:none;
     }
