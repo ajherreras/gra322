@@ -133,8 +133,9 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 4fr;
     }
-    .credits {
-        padding-top: 1.5rem;
+
+    .credits .inner {
+        padding: 1rem 0rem;
     }
 }
 
