@@ -35,9 +35,11 @@ nav li {
 }
 
 nav {
-    display:none;
     background-color: rgba(255,255,255,0.4);
-    padding: 1.25rem 1rem;
+    max-height:0;
+    overflow:hidden;
+    transition: all .25 ease-out;
+    width: 100%;
 }
 
 nav ul {
@@ -52,6 +54,10 @@ text-transform: uppercase;
 text-decoration: none;
 }
 
+.open {
+    max-height:200px;
+}
+
 h1 { 
     background-color: rgba(255,255,255,0.4);
     font-size: 14px;
@@ -64,12 +70,15 @@ h1 {
 .menu-wrapper {
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu-button {
     border:1px solid transparent;
     padding: 1rem;
     background-color: rgba(255,255,255,0.4);
+    line-height:0;
+    -webkit-appearance: none;
 }
 
 .intro {
@@ -158,6 +167,7 @@ footer {
     }
     nav {
         display: block;
+        width: auto;
     }
     nav ul {
         display: flex;
