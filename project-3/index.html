@@ -11,12 +11,112 @@
   <!-- Load Styles -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/30cd679648.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <!-- Add your content here -->
-<h1>Starter Project</h1>
-<p>test</p>
+
+<div class="hero">
+<header>
+<div class="menu">
+<h4 class="logo">Dayglow</h4>
+<i class="fa-solid fa-bars"></i>
+</div>
+</header>
+
+<h1>Joy in Sound</h1>
+<p>Explore Dayglow's music</p>
+</div>
+
+<section class="about">
+  <i class="fa-solid fa-star"></i>
+  <h3>The Journey</h3>
+  <p class="orange">Who is Dayglow?</p>
+  <p>Dayglow’s new album People in Motion continues Sloan Struble’s joyous quest to create music that makes people feel good. These tracks are delightfully pure manifestations of Struble’s desire to offer someone something to love.</p>
+  <a class="btn btn-primary" href="#">Listen</a>
+  <img src="/img/dayglow2.jpeg" alt="Sloan Struble, the artist known as Dayglow"><img>
+</section>
+
+<section class="tour">
+  <h2>Tour Dates</h2>
+  <a href="#">Mar 31 – Apr 2, 2023</a>
+  <p class="uppercase">Tecate Pal Norte – Monterrey, Mexico</p>
+  <a href="#">May 11 – May 13, 2023</a>
+  <p class="uppercase">Echoland festival – Live Oak, FL</p>
+  <a href="#">May 27, 2023</a>
+  <p class="uppercase">Bottlerock Napa Valley – Napa, CA</p>
+  <a class="btn btn-primary" href="#">All dates</a>
+</section>
+
+<section class="vids">
+  <h2>Videos</h2>
+  <div id="videos-list">
+    <div class="video">
+      <video loop preload="none">
+        <source src="/img/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="uppercase">Then It All Goes Away</p>
+
+    <div class="video">
+      <video loop preload="none">
+        <source src="/img/video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="uppercase">Medicine</p>
+
+    <div class="video">
+      <video loop preload="none">
+        <source src="/img/video3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="uppercase">Can I Call You Tonight?</p>
+  </div>
+  <a class="btn btn-secondary" href="#">Watch on Youtube</a>
+</section>
+
+<section class="store">
+  <img src="/img/merch1.png" alt="T-shirt with design for People in Motion album"></img>
+  <img src="/img/merch2.png" alt="Vinyl of People in Motion album"></img>
+  <a class="btn btn-primary" href="#">Shop</a>
+</section>
+
+<section class="connect">
+  <i class="fa-solid fa-rocket"></i>
+  <h2>Get in Touch</h2>
+  <div class="contact-options">
+    <p class="uppercase white">Email Updates</p>
+    <form>
+      <label for="email">Email Address</label>
+      <input type="text" id="email-address" name="email-address">
+    </form>
+
+    <p class="uppercase white">Text Me</p>
+    <p class="gray">+1 (512) 273-4637</p>
+
+    <p class="uppercase white">Business Inquiries</p>  
+    <a class="btn btn-primary">Contact</a>
+  </div>
+</section>
+
+<footer>
+  <h4 class="logo">Dayglow</h4>
+  <p class="gray">Dayglow &copy; 2023</p>
+  <div class="social-media">
+    <a class="social" href=#"><i class="fa-brands fa-square-instagram"></i></i></a>
+    <a class="social" href=#"><i class="fa-brands fa-square-twitter"></i></a>
+    <a class="social" href=#"><i class="fa-brands fa-square-youtube"></i></a>
+    <a class="social" href=#"><i class="fa-brands fa-square-facebook"></i></a>
+  </div>
+</footer>
+
 
 <!-- Load Scripts -->
 <script src="js/scripts.js"></script>
