@@ -181,7 +181,7 @@ h4 {
 
 .videos-button {
     text-align:center;
-    margin:4em;
+    margin:3em 0em 4em 0em;
 }
 
 .card video {
@@ -240,6 +240,11 @@ h4 {
     color:#ffffff;
     text-transform:uppercase;
     font-weight:600;
+}
+
+.connect a {
+    color: #989898;
+    text-decoration:none;
 }
 
 form {
