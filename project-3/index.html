@@ -20,93 +20,138 @@
 <body>
 <!-- Add your content here -->
 
-<div class="hero">
 <header>
-<div class="menu">
-<h4 class="logo">Dayglow</h4>
-<i class="fa-solid fa-bars"></i>
+
+<div class="hero-container overlay">
+<video autoplay muted loop class="hero-video">
+    <source src="/img/closetoyou-edit.mp4" type="video/mp4">
+</video>
 </div>
+
+<div class="hero-content white">
+
+  <div class="inner">
+    <div class="menu-wrapper">
+      <h4 class="logo">Dayglow</h4>
+      <h4><i class="fa-solid fa-bars"></i></h4>
+    </div>
+  
+
+    <div class="hero-text">
+      <h1>Joy in Sound</h1>
+      <p class="description">Explore Dayglow's music</p>
+    </div>
+  </div>
+</div>
+
 </header>
 
-<h1>Joy in Sound</h1>
-<p>Explore Dayglow's music</p>
-</div>
-
 <section class="about">
-  <i class="fa-solid fa-star"></i>
+  <div class="inner">
+  <i class="icon fa-solid fa-star"></i>
   <h3>The Journey</h3>
-  <p class="orange">Who is Dayglow?</p>
-  <p>Dayglow’s new album People in Motion continues Sloan Struble’s joyous quest to create music that makes people feel good. These tracks are delightfully pure manifestations of Struble’s desire to offer someone something to love.</p>
+  <p class="subtitle">Who is Dayglow?</p>
+  <p class="about-text">Dayglow’s new album <strong>People in Motion</strong> continues Sloan Struble’s joyous quest to create music that makes people feel good. These tracks are delightfully pure manifestations of Struble’s desire to offer someone something to love.</p>
   <a class="btn btn-primary" href="#">Listen</a>
-  <img src="/img/dayglow2.jpeg" alt="Sloan Struble, the artist known as Dayglow"><img>
+</div>
+ <img src="/img/dayglow2.jpeg" alt="Sloan Struble, the artist known as Dayglow"><img>
+
 </section>
 
 <section class="tour">
+  <div class="inner">
   <h2>Tour Dates</h2>
+  <div class="tour-dates">
   <a href="#">Mar 31 – Apr 2, 2023</a>
   <p class="uppercase">Tecate Pal Norte – Monterrey, Mexico</p>
   <a href="#">May 11 – May 13, 2023</a>
   <p class="uppercase">Echoland festival – Live Oak, FL</p>
   <a href="#">May 27, 2023</a>
   <p class="uppercase">Bottlerock Napa Valley – Napa, CA</p>
+</div>
   <a class="btn btn-primary" href="#">All dates</a>
+</div>
 </section>
 
 <section class="vids">
+  <div class="inner">
   <h2>Videos</h2>
   <div id="videos-list">
+
+    <div class="card">
     <div class="video">
-      <video loop preload="none">
+      <video muted loop poster="/img/poster1.jpg">
         <source src="/img/video1.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
-    <p class="uppercase">Then It All Goes Away</p>
+    <p>Then It All Goes Away</p>
+  </div>
 
+  <div class="card">
     <div class="video">
-      <video loop preload="none">
+      <video muted loop poster="/img/poster2.jpg">
         <source src="/img/video2.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
-    <p class="uppercase">Medicine</p>
+    <p>Medicine</p>
+    </div>
 
+    <div class="card">
     <div class="video">
-      <video loop preload="none">
+      <video muted loop poster="/img/poster3.jpg">
         <source src="/img/video3.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
-    <p class="uppercase">Can I Call You Tonight?</p>
+    <p>Can I Call You Tonight?</p>
+    </div>
   </div>
+  <div class="videos-button">
   <a class="btn btn-secondary" href="#">Watch on Youtube</a>
+</div>
+</div>
 </section>
 
 <section class="store">
+  <div class="inner">
+  <h2>Store</h2>
   <img src="/img/merch1.png" alt="T-shirt with design for People in Motion album"></img>
   <img src="/img/merch2.png" alt="Vinyl of People in Motion album"></img>
   <a class="btn btn-primary" href="#">Shop</a>
 </section>
 
 <section class="connect">
-  <i class="fa-solid fa-rocket"></i>
+  <div class="inner">
+  <i class="icon fa-solid fa-rocket"></i>
   <h2>Get in Touch</h2>
   <div class="contact-options">
-    <p class="uppercase white">Email Updates</p>
+    <div class="item">
+    <h5 class="uppercase white">Email Updates</h5>
     <form>
-      <label for="email">Email Address</label>
-      <input type="text" id="email-address" name="email-address">
+      <input type="text" id="email-address" name="email-address" placeholder="Your Email Address">
+      <p><input type="submit" class="btn btn-primary"></p>
     </form>
-
-    <p class="uppercase white">Text Me</p>
-    <p class="gray">+1 (512) 273-4637</p>
-
-    <p class="uppercase white">Business Inquiries</p>  
-    <a class="btn btn-primary">Contact</a>
   </div>
+
+  <div class="item">
+    <h5 class="uppercase white">Text Me</h5>
+    <p class="gray">+1 (512) 273-4637</p>
+  </div>
+
+  <div class="item">
+    <h5 class="uppercase white">Business Inquiries</h5>  
+    <p class="space-plz"><a class="btn btn-primary">Contact</a></p>
+
+  </div>
+  </div>
+</div>
+</div>
 </section>
 
 <footer>
+<div class="inner">
   <h4 class="logo">Dayglow</h4>
   <p class="gray">Dayglow &copy; 2023</p>
   <div class="social-media">
@@ -115,10 +160,12 @@
     <a class="social" href=#"><i class="fa-brands fa-square-youtube"></i></a>
     <a class="social" href=#"><i class="fa-brands fa-square-facebook"></i></a>
   </div>
+</div>
 </footer>
 
 
 <!-- Load Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
