@@ -86,6 +86,7 @@ h4 {
 
 .hero-container {
     display:block;
+    margin-bottom:100px;
 }
 
 
@@ -98,6 +99,7 @@ h4 {
     left: 0;
     height: 110%;
     width:100%;
+
 }
 
 .hero-content {
@@ -117,10 +119,6 @@ h4 {
 nav {
     display:none;
     padding-top:.5em;
-}
-
-.about {
-    margin-top:50%;
 }
 
 .about img {
@@ -521,8 +519,8 @@ footer {
 
 @media screen and (min-width:600px) {
 
-    .about {
-        margin-top:300px;
+    .about img {
+        margin-top:100px;
     }
 
     .store {
