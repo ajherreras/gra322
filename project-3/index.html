@@ -32,8 +32,21 @@
 
   <div class="inner">
     <div class="menu-wrapper">
-      <h4 class="logo">Dayglow</h4>
-      <h4><i class="fa-solid fa-bars"></i></h4>
+      <div class="menu-item">
+        <h4 class="logo">Dayglow</h4>
+      </div>
+
+
+        <h4 class="burger"><i class="fa-solid fa-bars"></i></h4>
+
+        <nav>
+        <p class="home"><i class="fa-solid fa-home"></i></p>
+        <p><a href="#">Music</a></p>
+        <p><a href="#">Tour</a></p>
+        <p><a href="#">Videos</a></p>
+        <p><a href="#">Shop</a></p>
+        <p><a href="#">Contact</a></p>
+      </nav>
     </div>
   
 
@@ -48,11 +61,13 @@
 
 <section class="about">
   <div class="inner">
+    <div class="intro">
   <i class="icon fa-solid fa-star"></i>
   <h3>The Journey</h3>
   <p class="subtitle">Who is Dayglow?</p>
   <p class="about-text">Dayglow’s new album <strong>People in Motion</strong> continues Sloan Struble’s joyous quest to create music that makes people feel good. These tracks are delightfully pure manifestations of Struble’s desire to offer someone something to love.</p>
   <a class="btn btn-primary" href="#">Listen</a>
+</div>
 </div>
  <img src="img/dayglow2.jpeg" alt="Sloan Struble, the artist known as Dayglow"><img>
 
@@ -60,17 +75,20 @@
 
 <section class="tour">
   <div class="inner">
-  <h2>Tour Dates</h2>
+    <div class="tour-title">
+      <h2>Tour Dates</h2>
+      <a class="tour-desktop btn btn-primary" href="#">All dates</a>
+    </div>
   <div class="tour-dates">
-  <a href="#">Mar 31 – Apr 2, 2023</a>
-  <p class="uppercase">Tecate Pal Norte – Monterrey, Mexico</p>
-  <a href="#">May 11 – May 13, 2023</a>
-  <p class="uppercase">Echoland festival – Live Oak, FL</p>
-  <a href="#">May 27, 2023</a>
-  <p class="uppercase">Bottlerock Napa Valley – Napa, CA</p>
-</div>
-  <a class="btn btn-primary" href="#">All dates</a>
-</div>
+    <a href="#">Mar 31 – Apr 2, 2023</a>
+    <p class="uppercase">Tecate Pal Norte – Monterrey, Mexico</p><br>
+    <a href="#">May 11 – May 13, 2023</a>
+    <p class="uppercase">Echoland festival – Live Oak, FL</p><br>
+    <a href="#">May 27, 2023</a>
+    <p class="uppercase">Bottlerock Napa Valley – Napa, CA</p>
+  </div>
+  <a class="tour-mobile btn btn-primary" href="#">All dates</a>
+  </div>
 </section>
 
 <section class="vids">
@@ -80,30 +98,30 @@
 
     <div class="card">
     <div class="video">
-      <video muted loop poster="img/poster1.jpg">
+      <a href="#"><video muted loop poster="img/poster1.jpg">
         <source src="img/video1.mp4" type="video/mp4">
       Your browser does not support the video tag.
-      </video>
+      </video></a>
     </div>
     <p>Then It All Goes Away</p>
   </div>
 
   <div class="card">
     <div class="video">
-      <video muted loop poster="img/poster2.jpg">
+      <a href="#"><video muted loop poster="img/poster2.jpg">
         <source src="img/video2.mp4" type="video/mp4">
       Your browser does not support the video tag.
-      </video>
+      </video></a>
     </div>
     <p>Medicine</p>
     </div>
 
     <div class="card">
     <div class="video">
-      <video muted loop poster="img/poster3.jpg">
+      <a href="#"><video muted loop poster="img/poster3.jpg">
         <source src="img/video3.mp4" type="video/mp4">
       Your browser does not support the video tag.
-      </video>
+      </video></a>
     </div>
     <p>Can I Call You Tonight?</p>
     </div>
@@ -115,23 +133,28 @@
 </section>
 
 <section class="store">
-  <div class="inner">
   <h2>Store</h2>
+  <div class="inner">
   <img src="img/merch1.png" alt="T-shirt with design for People in Motion album"></img>
   <img src="img/merch2.png" alt="Vinyl of People in Motion album"></img>
+  </div>
   <p><a class="btn btn-primary" href="#">Shop</a></p>
 </section>
 
 <section class="connect">
   <div class="inner">
+
+    <div class="grid-item">
   <i class="icon fa-solid fa-rocket"></i>
   <h2>Get in Touch</h2>
+</div>
+
   <div class="contact-options">
     <div class="item">
     <h5 class="uppercase white">Email Updates</h5>
     <form>
       <input type="text" id="email-address" name="email-address" placeholder="Your Email Address">
-      <p><input type="submit" class="btn btn-primary"></p>
+      <p><input type="submit" class="btn btn-secondary"></p>
     </form>
   </div>
 
@@ -142,9 +165,10 @@
 
   <div class="item">
     <h5 class="uppercase white">Business Inquiries</h5>  
-    <p class="space-plz"><a class="btn btn-primary">Contact</a></p>
+    <p class="space-plz"><a class="btn btn-secondary">Contact</a></p>
 
   </div>
+
   </div>
 </div>
 </div>
@@ -154,6 +178,7 @@
 <div class="inner">
   <h4 class="logo">Dayglow</h4>
   <p class="gray">Dayglow &copy; 2023</p>
+
   <div class="social-media">
     <a class="social" href=#"><i class="fa-brands fa-square-instagram"></i></i></a>
     <a class="social" href=#"><i class="fa-brands fa-square-twitter"></i></a>
