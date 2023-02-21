@@ -51,6 +51,7 @@ h4 {
     font-weight:700;
 }
 
+
 .description {
     font-weight:600;
     font-size:24px;
@@ -332,7 +333,7 @@ footer {
 ------------------------ Desktop Adjustments
 */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
 
     body {
         font-size:18px;
@@ -508,7 +509,7 @@ footer {
 
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:850px) {
 
     .blank-space {
         position:relative;
@@ -543,7 +544,7 @@ footer {
     }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:1000px) {
 
     .blank-space {
         position:relative;
