@@ -386,13 +386,14 @@ footer {
     }
 
     .blank-space {
-        height:50vh;
+        height:100vh;
         position:relative;
     }
 
-    .about {
+    .about .inner {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        gap: 3em;
         height:100%;
         padding-right:3em;
     }
@@ -530,7 +531,7 @@ footer {
 @media screen and (min-width:600px) {
 
     .blank-space {
-        height:50vh;
+        height:55vh;
         position:relative;
     }
 
