@@ -391,6 +391,9 @@ footer {
         position:relative;
     }
 
+    .about {
+        margin-top:1000px
+    }
 
 
     .about .inner {
