@@ -366,6 +366,9 @@ footer {
         display:inline-block;
     }
 
+    .hero-text {
+        margin-top:15%;
+    }
 
     nav {
         margin-left:auto;
@@ -574,6 +577,6 @@ footer {
 
 @media screen and (min-width:1900px) {
     .hero-text {
-        margin-top: 30%;
+        margin-top: 50%;
     }
 }
