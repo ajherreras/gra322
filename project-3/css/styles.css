@@ -82,7 +82,7 @@ h4 {
     z-index:1;
     background:linear-gradient(to right,rgba(11, 50, 59, 0.7),rgba(11, 50, 59, 0.7));
     mix-blend-mode:multiply;
-    height:110%;
+    height:100%;
 }
 
 .heroContainer {
@@ -97,7 +97,7 @@ h4 {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 110%;
+    height: 100%;
     width:100%;
 }
 
@@ -527,7 +527,7 @@ footer {
 @media screen and (min-width:600px) {
 
     .blank-space {
-        height:75%;
+        height:100%;
     }
 
 
