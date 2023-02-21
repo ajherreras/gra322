@@ -127,6 +127,10 @@ nav {
     padding-top:.5em;
 }
 
+.blank-space {
+    margin-top: 110%;
+}
+
 .about img {
     margin-top:3em;
 }
@@ -391,9 +395,7 @@ footer {
         position:relative;
     }
 
-    .blank-space {
-        margin-bottom:100%
-    }
+
 
 
     .about .inner {
@@ -505,7 +507,12 @@ footer {
 
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:600px) {
+
+    .blank-space {
+        position:relative;
+        margin-top: 80%;
+    }
 
 .burger {
     display:none;
@@ -535,10 +542,11 @@ footer {
     }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:900px) {
 
     .blank-space {
-        height:100%;
+        position:relative;
+        margin-top: 55%;
     }
 
 
@@ -577,6 +585,7 @@ footer {
         margin-left:auto;
     }
 }
+
 
 @media screen and (min-width:1900px) {
     .hero-text {
