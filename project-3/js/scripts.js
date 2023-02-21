@@ -8,6 +8,3 @@ $(function(){
     });
   });
 
-  let heroContainerHeight = document.getElementsByClassName('heroContainer')[0].offsetHeight;
-  let blankSpace = document.getElementsByClassName('blankSpace')[0];
-  blankSpace.style.height = heroContainerHeight + 400 + "px";

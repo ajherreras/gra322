@@ -108,8 +108,9 @@ h4 {
   }
 
 .hero-text {
-    margin-top: 10em;
+    margin-top:10em;
     text-align:center;
+    position:relative;
 }
 
 .home {
@@ -379,7 +380,9 @@ footer {
         margin: auto;
         max-width:1400px;
         padding: 0em 7em 0em 7em;
+        position:relative;
     }
+
 
 
     .about .inner {
@@ -522,6 +525,10 @@ footer {
 }
 
 @media screen and (min-width:600px) {
+
+    .blank-space {
+        height:75%;
+    }
 
 
     .store {
