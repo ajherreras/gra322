@@ -91,6 +91,8 @@ h4 {
 
 
 .hero-video {
+    display:flex;
+    align-items:center;
     position: absolute;
     object-fit:cover;
     top: 0;
@@ -108,9 +110,12 @@ h4 {
   }
 
 .hero-text {
-    margin-top:10em;
     text-align:center;
-    position:relative;
+    position:absolute;
+    vertical-align:middle;
+    margin-top: 20%;
+    left:0;
+    right: 0;
 }
 
 .home {
