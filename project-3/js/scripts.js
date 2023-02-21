@@ -7,3 +7,7 @@ $(function(){
      this.pause()
     });
   });
+
+  let aboutHeight = document.getElementsByClassName('about')[0].offsetHeight;
+  let blankSpace = document.getElementsByClassName('blankSpace')[0];
+  blankSpace.style.height = aboutHeight + 5 + "px";

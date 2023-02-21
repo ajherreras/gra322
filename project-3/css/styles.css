@@ -101,10 +101,6 @@ h4 {
     width:100%;
 }
 
-.blank-space {
-    height:50vh;
-    position:relative;
-}
 
 .hero-content {
     position: relative;
@@ -112,7 +108,7 @@ h4 {
   }
 
 .hero-text {
-    margin-top: 200px;
+    margin-top: 10em;
     text-align:center;
 }
 
@@ -385,12 +381,9 @@ footer {
         padding: 0em 7em 0em 7em;
     }
 
-    .blank-space {
-        height:100vh;
-        position:relative;
-    }
 
     .about .inner {
+        max-width:1400px;
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 3em;
@@ -530,10 +523,6 @@ footer {
 
 @media screen and (min-width:600px) {
 
-    .blank-space {
-        height:55vh;
-        position:relative;
-    }
 
     .store {
         padding-bottom:4em;
