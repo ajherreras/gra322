@@ -52,27 +52,35 @@ h4 {
 }
 
 .inner {
-    padding: 3rem;
+    padding: 0rem 4rem 0rem 4rem;
+    max-width: 1200px;
+    margin:auto;
 }
 
 .hero {
     position: relative;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width:100%;
     overflow: hidden;
+
 }
 
 .hero-text {
     color: #ffffff;
     margin: auto;
+    height: 75vh;
     text-align: center;
     padding-top: 3em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
 }
 
 .hero-video {
     position:absolute;
-    width: auto;
+    width: 100%;
     height: 100%;
     z-index: 0;
     object-fit:cover;
@@ -89,9 +97,8 @@ h4 {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: rgba(11, 50, 59, 0.7);
     mix-blend-mode: multiply;
-    opacity: 0.5;
     z-index: 1;
   }
 
@@ -102,6 +109,428 @@ h4 {
     margin-top:1em;
 }
 
-.white {
+.hero .logo {
     color:#ffffff;
 }
+
+.menu-wrapper {
+    padding-top:3rem;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+nav {
+    display:none;
+}
+
+.burger {
+    color: #ffffff;
+}
+
+
+.home {
+    display:none;
+}
+
+nav {
+    display:none;
+    padding-top:.5em;
+}
+
+.blank-space {
+    margin-top: 85vh;
+}
+
+.about img {
+    margin-top:3em;
+}
+
+.icon {
+    color:#63D8F1;
+    font-size:36px;
+    margin-bottom:.5em;
+}
+
+.subtitle {
+    text-transform:uppercase;
+    color:#FF7D21;
+    font-weight:700;
+    margin: 1em 0em;
+}
+
+.about-text {
+    margin-bottom:1.5em;
+}
+
+.about img {
+    width: 100%;
+}
+.btn {
+    text-transform:uppercase;
+    text-decoration:none;
+    font-weight:700;
+    border-radius:20px;
+    padding: .5em 1.25em;
+    line-height:1em;
+    background:none;
+}
+
+
+
+.btn-primary {
+    color:#FF7D21;
+    border: 1.5px solid #FF7D21;
+    transition:0.3s;
+}
+
+.btn-primary:hover {
+    color:#005F70;
+    border: 1.5px solid #005F70;
+}
+
+.btn-secondary {
+    color:#63D8F1;
+    border: 1.5px solid #63D8F1;
+    transition:0.3s;
+}
+
+.btn-secondary:hover {
+    color:#ffffff;
+    border: 1.5px solid #ffffff;
+}
+
+.tour {
+    text-transform:uppercase;
+    margin-bottom:4em;
+}
+
+.tour-desktop {
+    display:none;
+}
+
+.tour p {
+    color:#525252;
+    font-weight:600;
+}
+
+.tour-dates {
+    margin: 2em 0;
+}
+
+.vids {
+    background-color: #1A1A1A;
+}
+
+.vids h2 {
+    color:#63D8F1;
+    text-align:center;
+    margin:1.25em;
+}
+
+.videos-button {
+    text-align:center;
+    margin:3em 0em 4em 0em;
+}
+
+.card video {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    overflow:hidden;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.vids p {
+    text-transform:uppercase;
+    color:#ffffff;
+    font-weight:700;
+}
+
+
+.card {
+    text-align:center;
+    padding:1em;
+    margin-bottom:2em;
+
+}
+
+.card p {
+    margin-top:1em;
+}
+
+.store {
+    text-align:center;
+}
+
+.store p {
+    margin-bottom:2em;
+}
+
+.store h2 {
+    margin:1em;
+}
+
+.connect {
+    background-color:#1A1A1A;
+    padding: 2em 0em 2em 0em;
+}
+
+.connect h2 {
+    color:#ffffff;
+}
+
+.gray {
+    color: #989898;
+    font-weight:600;
+}
+
+.connect h5 {
+    color:#ffffff;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+.connect a {
+    color: #989898;
+    text-decoration:none;
+}
+
+.connect .btn-secondary {
+    color:#63D8F1;
+}
+
+.connect .btn-secondary:hover {
+    color:#ffffff;
+}
+
+form {
+    font-family: 'Inter', sans-serif;
+    line-height:1.75em;
+    padding: .5em 0em 1em 0em;
+}
+
+form .btn {
+    margin-top:1em;
+}
+
+.item {
+    padding: 1em 0em 2em 0em;
+}
+
+.space-plz {
+    margin-top: 1em;
+}
+
+footer {
+    text-align:center;
+}
+
+.social {
+    font-size:36px;
+    padding:.25em;
+    color:#000000;
+    transition:0.3s;
+}
+
+.social:hover {
+    color:#FF7D21;
+}
+
+
+/* DESKTOP ADJUSTMENTS */
+
+@media screen and (min-width:400px) and (max-width:899px) {
+    .about {
+        padding-top:4rem;
+    }
+    .vids {
+        padding:3rem;
+    }
+
+    .connect {
+        padding: 5rem 0rem 3rem 0rem;
+    }
+
+    footer {
+        padding: 3rem 0rem 4rem 0rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    body {
+        font-size:18px;
+    }
+
+    h1 {
+        font-size:100px;
+        line-height:1.25em;
+    }
+
+    h2 {
+        font-size:72px;
+        line-height:1.25em;
+    }
+    
+    h3 {
+        font-size:54px;
+    }
+    
+    h4 {
+        font-size:32px;
+    }
+
+    header {
+        padding-top: 3em;
+    }
+
+
+    .burger {
+        display:none;
+    }
+
+    .home {
+        color:#FF7D21;
+        display:inline-block;
+    }
+
+
+    nav {
+        margin-left:auto;
+        display:flex;
+        gap: 3em;
+        
+    }
+
+
+
+    nav a {
+        font-family: Poppins;
+        font-size:16px;
+        color:#ffffff;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+
+
+
+
+    .about .inner {
+        max-width:1200px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3em;
+        height:100%;
+        padding-right:3em;
+        padding-top:5em;
+    }
+
+
+    .about img {
+        object-fit:cover;
+        overflow:hidden;
+        border-radius: 100%;
+    }
+
+
+    .tour-mobile {
+        display:none;
+    }
+
+    .tour-desktop {
+        display:inline;
+    }
+
+    .tour .inner {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tour h2 {
+        padding-right:3em;
+        margin: .5em 0em .5em 0em;
+    }
+
+    .tour-dates {
+        border-left: 3px solid #63D8F1;
+        padding-left: 1.5em;
+    }
+
+    .vids {
+        padding: 2em 0em 3em 0em;
+    }
+
+    #videos-list {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card video {
+        max-height:200px;
+    }
+
+    .store .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom:3em;
+        margin:auto;
+    }
+
+    .store {
+        padding: 2em 0em 3em 0em;
+    }
+
+    .connect {
+        padding: 5em 0em 5em 0em;
+    }
+
+    .connect .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .connect h2 {
+        padding-right: 3em;
+    }
+
+    .connect p {
+        padding-bottom:2em;
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+
+    footer {
+        padding: 2em 0em 2em 0em;
+    }
+    footer .inner {
+        margin:auto;
+        display: flex;
+        gap: 1.5em;
+        text-align:left;
+    }
+
+    footer p {
+        font-size:16px;
+    }
+
+    footer .gray {
+        padding-top: 1.05em;
+    }
+
+    footer .logo {
+        padding-top:.25em;
+    }
+
+    .social-media {
+        margin-left:auto;
+    }
+
+}
+
