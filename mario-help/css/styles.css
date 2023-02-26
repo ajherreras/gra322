@@ -1,0 +1,291 @@
+body {
+    background-color:#000000;
+    font-size:14px;
+}
+
+p, a {
+    font-family: 'Noto Sans', sans-serif;
+    line-height:1.5em;
+    color:#ffffff;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+    color:#ffffff;
+}
+
+h5 {
+    font-family: 'Noto Sans', sans-serif;
+    line-height:1.75em;
+    text-transform:uppercase;
+    font-size:16px;
+}
+
+h1 {
+    font-size:48px;
+    font-weight:800;
+    line-height:1.25em;
+    letter-spacing:-1px;
+}
+
+h2 {
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+h3 {
+    font-size:32px;
+    font-weight:700;
+}
+
+h4 {
+    font-size:27px;
+    font-weight:700;
+}
+
+.inner {
+    padding: 2rem;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 25rem;
+    width:100%;
+    overflow: hidden;
+
+}
+
+.hero-text {
+    color: #ffffff;
+    margin: auto;
+    height: 75vh;
+    text-align: center;
+    padding-top: 3em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+
+.hero-video {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit:cover;
+}
+
+.container {
+    position:relative;
+    z-index: 2;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,1) );
+    z-index: 1;
+  }
+
+
+.description {
+    margin-bottom:1em;
+}
+
+.streaming {
+    padding-bottom:2em;
+}
+
+.hero .logo {
+    max-height:2.5em;
+    text-align:center;
+}
+
+.menu-wrapper {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+nav {
+    display:none;
+}
+
+.menu-icon {
+    color: #ffffff;
+}
+
+
+.home {
+    display:none;
+}
+
+nav {
+    display:none;
+    padding-top:.5em;
+}
+
+
+.btn {
+    text-decoration:none;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.btn-primary {
+background-color: #ffffff;
+color: #000000;
+font-size:24px;
+padding: 8px 25px 8px 25px;
+border-radius: 10px;
+font-weight:700;
+}
+
+.btn-secondary {
+    background-color: rgba(255,255,255,0.5);
+    font-size:24px;
+padding: 8px 25px 8px 25px;
+border-radius: 10px;
+font-weight:700;
+margin-left:0.5em;
+}
+
+.star-bg {
+    background-image:url('/img/starry-sky-extended.jpg');
+    background-size: cover;
+    z-index: 0;
+}
+
+
+.sub {
+    font-weight: 600;
+    font-size:16px;
+}
+
+.moon {
+    margin:auto;
+    padding: 5em 0em 15em 0em;
+}
+
+
+
+
+
+
+
+
+.season {
+    position: relative;
+    height: 75vh;
+    min-height: 25rem;
+    width:100%;
+    overflow: hidden;
+
+}
+
+.season-text {
+    color: #ffffff;
+    padding-top:5em;
+    height: 60vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.season-heading {
+    padding-top:3em;
+}
+
+.season-video {
+    position:absolute;
+    width: 100%;
+    height: 75vh;
+    z-index: 0;
+    object-fit:cover;
+}
+
+.container {
+    position:relative;
+    z-index: 2;
+}
+
+.season .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    background:rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+
+  .shop {
+    margin-bottom:7em;
+  }
+
+  .about {
+    margin-bottom:7em;
+  }
+
+  .contact {
+    margin-bottom:7em;
+  }
+
+  footer .logo {
+    max-height:2em;
+    margin:auto;
+  }
+
+  footer a {
+    font-size:20px;
+    text-decoration:none;
+  }
+
+  .footer-item {
+    width: 100%;
+    text-align:center;
+    padding:1em;
+  }
+
+  .mobile-footer {
+    margin-top:3em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mobile-footer > div {
+    flex: 50%;
+  }
+
+  .social-media {
+    text-align:center;
+  }
+
+  .sm {
+    color:#ffffff;
+  }
+
+  .fa-stack {
+    font-size:1.5em;
+  }
+
+  .fa-brands {
+    font-size:1.25em;
+  }
+
+  .bottom {
+    margin-top:-5em;
+  }
+
+  .copyright {
+    padding:1em;
+    text-align:center;
+    font-weight:600;
+  }
