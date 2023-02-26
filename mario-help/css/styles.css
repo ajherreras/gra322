@@ -158,8 +158,8 @@ margin-left:0.5em;
 }
 
 .star-bg {
-    background-image:url('/img/starry-sky-extended.jpg');
-    background-size: cover;
+    background-image:url('../img/starry-sky-extended.jpg');
+    background-size: contain;
     z-index: 0;
 }
 
