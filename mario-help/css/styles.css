@@ -114,10 +114,6 @@ h4 {
     flex-wrap: wrap;
 }
 
-nav {
-    display:none;
-}
-
 .menu-icon {
     color: #ffffff;
 }
@@ -130,13 +126,17 @@ nav {
 nav {
     display:none;
     padding-top:.5em;
+    
+}
+
+nav a {
+  text-decoration:none;
 }
 
 
 .btn {
     text-decoration:none;
     display: inline-block;
-    margin-top: 1em;
 }
 
 .btn-primary {
@@ -186,6 +186,7 @@ margin-left:0.5em;
     height: 65vh;
     width:100%;
     overflow: hidden;
+    cursor:pointer;
 
 }
 
@@ -292,3 +293,151 @@ margin-left:0.5em;
     text-align:center;
     font-weight:600;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:800px) {
+
+  body {
+    font-size:16px;
+  }
+
+  h1 {
+  font-size:96px;
+  }
+
+  h2 {
+    font-size:36px;
+  }
+
+
+  .menu-wrapper {
+    margin:auto;
+    align-items:center;
+    display: flex;
+  }
+
+
+  .menu-item-left, .menu-item-right {
+    flex:1;
+    display:flex;
+  }
+
+  .menu-item-right {
+    justify-content: flex-end;
+  }
+
+  .hero .logo {
+    max-height:1.5em;
+  }
+
+  .sub {
+    font-size:16px;
+  }
+
+  .inner {
+    padding: 4rem;
+  max-width:1200px;
+  }
+
+  .description {
+    max-width:600px;
+  }
+
+  .btn-primary {
+    font-size:20px;
+  }
+
+  .btn-secondary {
+    font-size:20px;
+  }
+
+  .burger {
+    display:none;
+  }
+
+  nav {
+    display: flex;
+    gap:2em;
+  }
+
+  nav a {
+    font-size:20px;
+  }
+
+
+  .intro .inner {
+    display:grid;
+    grid-template-columns: 55% 1fr;
+  }
+
+  .intro .grid-item {
+   max-width:400px;
+  }
+
+  .moon {
+    margin-left:0;
+    padding: 5em 0em 10em 0em;
+  }
+
+  .season .inner {
+    display:grid;
+    grid-template-columns: 55% 1fr;
+    align-items:center;
+  }
+
+  .season-text {
+    padding-top:0;
+}
+
+  .season-heading {
+    margin-top:0;
+}
+
+  .shop {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap:3em;
+  }
+
+  .about-contact {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap:3em;
+  }
+
+
+  footer {
+    margin:auto;
+    max-width:1000px;
+  }
+
+  .mobile-footer > div {
+    flex: 1;
+  }
+
+  .mobile-footer {
+    margin:1em 0em 2em 0em;
+  }
+
+  footer .logo {
+    max-height:1.5em;
+  }
+
+
+}
+    
