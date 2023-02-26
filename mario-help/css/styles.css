@@ -184,7 +184,6 @@ margin-left:0.5em;
 .season {
     position: relative;
     height: 65vh;
-    min-height: 25rem;
     width:100%;
     overflow: hidden;
 
@@ -200,7 +199,7 @@ margin-left:0.5em;
 }
 
 .season-heading {
-    margin-top:1em;
+    margin-top:3em;
 }
 
 .season-video {
