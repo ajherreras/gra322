@@ -472,7 +472,7 @@ footer {
 
 @media screen and (min-width:400px) {
 .inner {
-    padding:1.5em;
+    padding:1.5rem;
 }
 
     .hero, .hero-overlay {
@@ -497,7 +497,7 @@ footer {
 @media screen and (min-width: 900px) {
 
     .inner {
-        padding:2em;
+        padding:2rem;
     }
 
     body {
