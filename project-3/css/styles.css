@@ -471,6 +471,9 @@ footer {
 /* DESKTOP ADJUSTMENTS */
 
 @media screen and (min-width:400px) and (max-width:899px) {
+.inner {
+    padding:1.5em;
+}
     .about {
         padding-top:4rem;
     }
@@ -483,7 +486,7 @@ footer {
     }
 
     footer {
-        padding: 1rem 0rem 1rem 0rem;
+        padding: 0rem 0rem 1rem 0rem;
     }
 }
 
