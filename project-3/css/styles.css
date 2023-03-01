@@ -59,7 +59,7 @@ h4 {
 
 .hero {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     min-height: 25rem;
     width:100%;
     overflow: hidden;
@@ -84,6 +84,7 @@ h4 {
     height: 100%;
     z-index: 0;
     object-fit:cover;
+    clip-path: ellipse(150% 100% at 50% 0); 
 }
 
 .hero .container {
@@ -95,11 +96,12 @@ h4 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-color: rgba(11, 50, 59, 0.7);
     mix-blend-mode: multiply;
     z-index: 1;
+    clip-path: ellipse(150% 100% at 50% 0); 
   }
 
 
@@ -158,6 +160,17 @@ nav {
     margin: 1em 0em;
 }
 
+.halftone-light {
+    background-image: url('/img/halftone-light.png');
+    object-fit:cover;
+}
+
+.halftone-dark {
+    background-image: url('/img/halftone-dark.png');
+    object-fit:cover;
+}
+
+
 .about-text {
     margin-bottom:1.5em;
 }
@@ -200,6 +213,112 @@ nav {
     border: 1.5px solid #ffffff;
 }
 
+
+
+.hvr-radial-out-primary {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border: 1.5px solid #FF7D21;
+    color:#FF7D21;
+  }
+  .hvr-radial-out-primary:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FF7D21;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-radial-out-primary:hover, .hvr-radial-out-primary:focus, .hvr-radial-out-primary:active {
+    color: white;
+  }
+  .hvr-radial-out-primary:hover:before, .hvr-radial-out-primary:focus:before, .hvr-radial-out-primary:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+  
+
+
+
+
+  .hvr-radial-out-secondary {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border: 1.5px solid #63D8F1;
+    color:#63D8F1;
+  }
+  .hvr-radial-out-secondary:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #63D8F1;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-radial-out-secondary:hover, .hvr-radial-out-secondary:focus, .hvr-radial-out-secondary:active {
+    color: #000000;
+  }
+  .hvr-radial-out-secondary:hover:before, .hvr-radial-out-secondary:focus:before, .hvr-radial-out-secondary:active:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tour {
     text-transform:uppercase;
     margin-bottom:4em;
@@ -225,7 +344,7 @@ nav {
 .vids h2 {
     color:#63D8F1;
     text-align:center;
-    margin:1.25em;
+    margin: 1.25em 0em;
 }
 
 .videos-button {
@@ -292,10 +411,6 @@ nav {
     font-weight:600;
 }
 
-.connect a {
-    color: #989898;
-    text-decoration:none;
-}
 
 .connect .btn-secondary {
     color:#63D8F1;
@@ -454,7 +569,7 @@ footer {
     }
 
     .tour-desktop {
-        display:inline;
+        display:inline-block;
     }
 
     .tour .inner {
@@ -476,6 +591,7 @@ footer {
         padding: 2em 0em 3em 0em;
     }
 
+
     #videos-list {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -496,13 +612,10 @@ footer {
         padding: 2em 0em 3em 0em;
     }
 
-    .connect {
-        padding: 5em 0em 5em 0em;
-    }
 
     .connect .inner {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     .connect h2 {
@@ -510,7 +623,7 @@ footer {
     }
 
     .connect p {
-        padding-bottom:2em;
+        padding-bottom:3em;
     }
 
     .grid-item {
