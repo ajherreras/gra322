@@ -139,6 +139,15 @@ nav {
     padding-top:.5em;
 }
 
+nav a {
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#FF7D21;
+    transition:0.3s;
+}
+
 .blank-space {
     margin-top: 85vh;
 }
