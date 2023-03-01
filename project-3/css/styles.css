@@ -470,10 +470,14 @@ footer {
 
 /* DESKTOP ADJUSTMENTS */
 
-@media screen and (min-width:400px) and (max-width:899px) {
+@media screen and (min-width:400px) {
 .inner {
     padding:1.5em;
 }
+
+    .hero, .hero-overlay {
+        clip-path: ellipse(200% 100% at 50% 0); 
+    }
     .about {
         padding-top:4rem;
     }
