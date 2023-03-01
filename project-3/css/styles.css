@@ -492,6 +492,10 @@ footer {
 
 @media screen and (min-width: 900px) {
 
+    .inner {
+        padding:2em;
+    }
+
     body {
         font-size:18px;
     }
@@ -641,7 +645,7 @@ footer {
         display: flex;
         gap: 1.5em;
         text-align:left;
-        padding: 1em 4em;
+        padding: 1em 2em;
     }
 
     footer p {
