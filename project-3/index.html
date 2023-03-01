@@ -21,59 +21,55 @@
 <body>
 <!-- Add your content here -->
 
-<header>
+<section class="hero">
 
-<div class="heroContainer overlay">
-<video autoplay muted loop poster="img/hero-poster.jpg" class="hero-video">
+  <div class="overlay"></div>
+  <video autoplay muted loop poster="img/hero-poster.jpg" class="hero-video">
     <source src="img/closetoyou-edit.mp4" type="video/mp4">
-</video>
-</div>
+  </video>
 
-<div class="hero-content white">
-
-  <div class="inner">
-    <div class="menu-wrapper">
-      <div class="menu-item">
-        <h4 class="logo">Dayglow</h4>
+  <div class="container">
+    <div class="inner">
+      <div class="menu-wrapper">
+        <div class="menu-item">
+          <h4 class="logo">Dayglow</h4>
+        </div>
+  
+  
+        <h4 class="burger"><i class="fa-solid fa-bars"></i></h4>
+  
+        <nav>
+          <p class="home"><i class="fa-solid fa-home"></i></p>
+          <p><a href="#">Music</a></p>
+          <p><a href="#">Tour</a></p>
+          <p><a href="#">Videos</a></p>
+          <p><a href="#">Shop</a></p>
+          <p><a href="#">Contact</a></p>
+        </nav>
       </div>
 
-
-        <h4 class="burger"><i class="fa-solid fa-bars"></i></h4>
-
-        <nav>
-        <p class="home"><i class="fa-solid fa-home"></i></p>
-        <p><a href="#">Music</a></p>
-        <p><a href="#">Tour</a></p>
-        <p><a href="#">Videos</a></p>
-        <p><a href="#">Shop</a></p>
-        <p><a href="#">Contact</a></p>
-      </nav>
-    </div>
-  
     <div class="hero-text">
-      <h1>Joy in Sound</h1>
-      <p class="description">Explore Dayglow's music</p>
-    </div>
-  </div>
+  <h1>Joy in Sound</h1>
+  <p class="description">Explore Dayglow's Music</p>
 </div>
+</div>
+</section>
 
-</header>
-
-<div class="blank-space"></div>
 
 <section class="about" data-aos="fade-up"  data-aos-delay="250" data-aos-easing="ease-in-out">
 
   <div class="inner">
     <div class="intro">
-     <i class="icon fa-solid fa-star"></i>
-     <h3 >The Journey</h3>
-      <p class="subtitle">Who is Dayglow?</p>
+      <i class="icon fa-solid fa-star"></i>
+      <h3>The Journey</h3>
+     <p class="subtitle">Who is Dayglow?</p>
       <p class="about-text">Dayglow’s new album <strong>People in Motion</strong> continues Sloan Struble’s joyous quest to create music that makes people feel good. These tracks are delightfully pure manifestations of Struble’s desire to offer someone something to love.</p>
       <a class="btn btn-primary" href="#">Listen</a>
     </div>
-  <img src="img/dayglow2.jpeg" alt="Sloan Struble, the artist known as Dayglow"><img>
-
-</div>
+    <div class="bio-photo">
+    <img src="img/dayglow2.jpeg" alt="Sloan Struble, the artist known as Dayglow"><img>
+  </div>
+  </div>
  
 
 </section>
@@ -150,29 +146,26 @@
   <div class="inner">
 
     <div class="grid-item">
-  <i class="icon fa-solid fa-rocket"></i>
-  <h2>Get in Touch</h2>
-</div>
+      <i class="icon fa-solid fa-rocket"></i>
+      <h2>Get in Touch</h2>
+    </div>
 
-  <div class="contact-options">
     <div class="item">
-    <h5 class="uppercase white">Email Updates</h5>
-    <form>
-      <input type="text" id="email-address" name="email-address" placeholder="Your Email Address">
-      <p><input type="submit" class="btn btn-secondary"></p>
-    </form>
-  </div>
+      <h5 class="uppercase white">Text Me</h5>
+      <p class="gray">+1 (512) 273-4637</p>
+      <h5 class="uppercase white">Business Inquiries</h5>  
+      <p class="space-plz"><a class="btn btn-secondary">Contact</a></p>
+    </div>
 
-  <div class="item">
-    <h5 class="uppercase white">Text Me</h5>
-    <p class="gray">+1 (512) 273-4637</p>
-  </div>
+     <div class="item">
+        <h5 class="uppercase white">Email Updates</h5>
+        <form>
+          <input type="text" id="email-address" name="email-address" placeholder="Your Email Address">
+          <p><input type="submit" class="btn btn-secondary"></p>
+        </form>
+      </div>
 
-  <div class="item">
-    <h5 class="uppercase white">Business Inquiries</h5>  
-    <p class="space-plz"><a class="btn btn-secondary">Contact</a></p>
 
-  </div>
 
   </div>
 </div>
@@ -181,7 +174,7 @@
 
 <footer>
 <div class="inner">
-  <h4 class="logo credits">Dayglow</h4>
+  <h4 class="logo">Dayglow</h4>
   <p class="gray">Dayglow &copy; 2023</p>
 
   <div class="social-media">
@@ -196,8 +189,10 @@
 
 <!-- Load Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script src="js/scripts.js"></script>
 <script>
   AOS.init();
   AOS.init({disable: 'mobile'});

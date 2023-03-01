@@ -8,3 +8,9 @@ $(function(){
     });
   });
 
+  $('.jarallax').jarallax({
+    speed: 0.2,
+    type:'scale',
+  });
+
+  var rellax = new Rellax('.rellax');
