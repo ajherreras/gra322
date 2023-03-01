@@ -471,9 +471,10 @@ footer {
 /* DESKTOP ADJUSTMENTS */
 
 @media screen and (min-width:400px) {
-.inner {
-    padding:1.5rem;
-}
+
+    .inner {
+    padding:1rem;
+    }
 
     .hero, .hero-overlay {
         clip-path: ellipse(200% 100% at 50% 0); 
