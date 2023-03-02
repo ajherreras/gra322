@@ -16,3 +16,6 @@ $(function(){
   var rellax = new Rellax('.rellax', {
     center: true
   });
+
+  AOS.init();
+  AOS.init({disable: 'mobile'});
