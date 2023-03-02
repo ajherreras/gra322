@@ -169,16 +169,6 @@ nav a:hover {
     margin: 1em 0em;
 }
 
-.halftone-light {
-    background-image: url('img/halftone-light.png');
-    object-fit:cover;
-}
-
-.halftone-dark {
-    background-image: url('img/halftone-dark.png');
-    object-fit:cover;
-}
-
 
 .about-text {
     margin-bottom:1.5em;
