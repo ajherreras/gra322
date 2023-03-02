@@ -7,5 +7,7 @@
 			"path": "../../testing"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "testing"
+	}
 }
