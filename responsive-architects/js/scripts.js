@@ -17,3 +17,11 @@ $('.jarallax').jarallax({
     vertical: true,
     horizontal: false
   });
+
+  var slider = tns({
+    container: '.my-slider',
+    items: 3,
+    slideBy: 'page',
+    autoplay: false,
+    controls: false
+  });
