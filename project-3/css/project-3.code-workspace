@@ -1,9 +1,5 @@
 {
-	"folders": [
-		{
-			"path": "../../responsive-architects"
-		}
-	],
+	"folders": [],
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "testing"
 	}
