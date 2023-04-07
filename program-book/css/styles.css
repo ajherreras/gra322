@@ -129,6 +129,16 @@ nav a:before {
     background:none;
 }
 
+.project img {
+    transition:0.3s;
+}
+
+.project img:hover {
+    opacity:75%;
+    transition:0.3s;
+    transform: scale(0.95);
+}
+
 .project a {
     box-shadow: none;
     color: #000;
@@ -223,15 +233,7 @@ ul {
     color:#a6a6a6;
 }
 
-.project img {
-    transition:0.3s;
-}
 
-.project img:hover {
-    opacity:75%;
-    transition:0.3s;
-    transform: scale(0.95);
-}
 
 
 .back {
@@ -323,7 +325,7 @@ footer {
 
     h1 {
         font-size:72px;
-    max-width: 60%;
+    max-width: 684px;
     }
 
 .two-col {
