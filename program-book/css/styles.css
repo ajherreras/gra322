@@ -131,6 +131,7 @@ nav a:before {
 
 .project img {
     transition:0.3s;
+    width:600px;
 }
 
 .project img:hover {
