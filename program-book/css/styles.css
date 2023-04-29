@@ -246,7 +246,7 @@ ul {
     border:none;
     font-family: "proxima-nova", sans-serif;
     padding:.25em 1em;
-    margin: .25em;
+    margin: .25em .5em;
     transition:0.3s;
     cursor:pointer;
     color:#000;
