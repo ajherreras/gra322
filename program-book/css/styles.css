@@ -157,7 +157,7 @@ a {
     color:#000;
     text-decoration:none;
     transition:0.3s;
-    font-weight:600;
+    font-weight:400;
     padding-bottom:0.25em;
     display: inline-block;
   vertical-align: middle;
@@ -180,7 +180,7 @@ a:before {
     right: 0;
     bottom: 0;
     background: #cecece;
-    height: 2px;
+    height: 1.5px;
     -webkit-transition-property: left;
     transition-property: left;
     -webkit-transition-duration: 0.3s;
@@ -197,32 +197,32 @@ h1, h2, h3, h4{
 }
 
 h1 {
-    font-size:60px;
-    font-weight:600;
+    font-size:48px;
+    font-weight:400;
     line-height:1.2em;
 }
 
 h2 {
-    font-size:48px;
-    font-weight:600;
+    font-size:36px;
+    font-weight:400;
     line-height:1.1em;
 }
 
 h3 {
-    font-size:36px;
-    font-weight:600;
+    font-size:24px;
+    font-weight:400;
 }
 
 h4 {
-    font-size:24px;
-    font-weight:600;
+    font-size:18px;
+    font-weight:400;
 }
 
 h5 {
     font-family: "proxima-nova", sans-serif;
     line-height:1.5em;
     font-size:20px;
-    font-weight:600;
+    font-weight:400;
 }
 
 ul {
@@ -254,7 +254,6 @@ ul {
 .btn:hover {
     background-color:#fff;
     transition:0.3s;
-    font-weight:600;
 }
 
 .btn.active {
@@ -279,7 +278,7 @@ ul {
 }
 
 .home-hero {
-   margin-top: 5em;
+   margin-top: 7em;
 }
 
 .home-hero h1 {
@@ -402,8 +401,7 @@ footer {
 @media screen and (min-width:684px) {
 
     h1 {
-        font-size:72px;
-    max-width: 650px;
+        font-size:54px;
     }
 
 .two-col {
