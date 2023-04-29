@@ -246,20 +246,23 @@ ul {
     border:none;
     font-family: "proxima-nova", sans-serif;
     padding:.25em 1em;
-    margin: 0 .25em;
+    margin: .25em;
     transition:0.3s;
     cursor:pointer;
+    color:#000;
 
 }
 
 .btn:hover {
     background-color:#fff;
     transition:0.3s;
+    color:#000;
 }
 
 .btn.active {
     background-color:#fff;
     font-weight:600;
+    color:#000;
 }
 
 
