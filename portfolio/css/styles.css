@@ -307,8 +307,8 @@ header {
 @media screen and (max-width:770px) {
 
     .hero-img {
-        padding: 5em 1em;
-        width: 100%;
+        padding-top: 4em;
+        width: 90%;
         margin:auto;
     }
 
