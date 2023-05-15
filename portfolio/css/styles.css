@@ -307,10 +307,11 @@ header {
 @media screen and (max-width:770px) {
 
     .hero-img {
-        padding: 3em;
+        padding: 5em 1em;
         width: 100%;
         margin:auto;
     }
+
 
 
     .hero-content {
@@ -321,6 +322,10 @@ header {
         display: none;
     }
 
+    .about {
+        margin-top: 25%;
+    }
+
 
     .nav-menu {
         position: fixed;
@@ -329,11 +334,12 @@ header {
         opacity: 0;
         visibility: hidden;
         flex-direction: column;
+        justify-content: center;
         background-color: #fafafa;
         width: 100%;
         height: 100vh;
         transition: 0.2s ease-in-out;
-        padding: 10em 3em;
+        padding: 50% 3em;
         font-size: 1.25em;
         z-index: 5;
         transition: .5s ease-in-out;
