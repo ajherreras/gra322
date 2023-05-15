@@ -230,13 +230,17 @@ header {
 }
 
 .hero {
-    padding-top: 20%;
+    padding-top: 10%;
     height:80vh;
 }
+
+
+
 
 .hero-content h1 {
     padding-bottom:.5em;
 }
+
 
 .skills li {
 
@@ -302,12 +306,19 @@ header {
 
 @media screen and (max-width:770px) {
 
+    .hero-img {
+        padding: 3em;
+        width: 100%;
+        margin:auto;
+    }
+
+
     .hero-content {
         padding-top: 30%;
     }
 
     .arrow {
-        left: 47%;
+        display: none;
     }
 
 
@@ -402,6 +413,10 @@ header {
 
     .align-start {
         align-items: start;
+    }
+
+    .align-center {
+        align-items:center;
     }
 
     .intro {
