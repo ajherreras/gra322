@@ -63,12 +63,15 @@ a:hover {
 
 .logo {
     max-height:48px;
+    display: block;
+    z-index: 2;
+    position: relative;
 }
 
 .outer {
     max-width:1240px;
     margin:auto;
-    padding: 1em;
+    padding: 2em;
 }
 
 .inner {
@@ -102,13 +105,18 @@ ul {
 /* Navigation */  
 
 
-
+header {
+    position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    z-index: 3;
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 1em;
 }
 
 
@@ -129,11 +137,10 @@ ul {
 .nav-menu {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 
@@ -295,34 +302,62 @@ ul {
 
 @media screen and (max-width:770px) {
 
+    .hero-content {
+        padding-top: 30%;
+    }
+
+    .arrow {
+        left: 47%;
+    }
+
 
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
         flex-direction: column;
         background-color: #fafafa;
         width: 100%;
-        height: 75vh;
+        height: 100vh;
         transition: 0.2s ease-in-out;
         padding: 10em 3em;
         font-size: 1.25em;
         z-index: 5;
         transition: .5s ease-in-out;
+        z-index: 1;
     }
 
     .nav-menu.active {
-        left: 0;
+        visibility: visible;
+        opacity: 1;
         transition: .5s ease-in-out;
+    }
+
+    header {
+        background: #fafafa;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
 
     .nav-item {
         margin: 1em 0;
     }
 
+    .navbar {
+        padding: 2em 3em 1.5em 3em;
+        border-bottom: 1px solid #dedede;
+    }
+
     .hamburger {
+        position: relative;
         display: block;
         cursor: pointer;
+        z-index: 5;
     }
 
 
@@ -331,11 +366,13 @@ ul {
     .hamburger.active .bar:nth-child(1) {
         -webkit-transform: translateY(5px) rotate(45deg);
         transform: translateY(5px) rotate(45deg);
+        z-index: 5;
     }
 
     .hamburger.active .bar:nth-child(2) {
         -webkit-transform: translateY(-3px) rotate(-45deg);
         transform: translateY(-3px) rotate(-45deg);
+        z-index: 5;
     }
 
 }
@@ -379,5 +416,9 @@ ul {
     .footer-content {
         display: flex;
         justify-content: space-between;
+    }
+
+    footer .grid-item {
+        padding-left: 40%;
     }
 }
