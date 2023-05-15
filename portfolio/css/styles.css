@@ -156,7 +156,7 @@ header {
     opacity: 0;
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 75%;
     transform-origin: 50% 50%;
     transform: translate3d(-50%, -50%, 0);
 }
@@ -230,8 +230,9 @@ header {
 }
 
 .hero {
-    padding-top: 10%;
-    height:80vh;
+    position: relative;
+    top: 25%;
+    padding-bottom: 15%;
 }
 
 
@@ -249,9 +250,7 @@ header {
     max-width:80%;
 }
 
-.about {
-    padding-top:10em;
-}
+
 
 .about h4 {
     padding-bottom: 1em;
@@ -308,23 +307,17 @@ header {
 
     .hero-img {
         padding-top: 4em;
-        width: 90%;
+        width: 100%;
         margin:auto;
+        display: block;
+        position: relative;
     }
 
-
-
-    .hero-content {
-        padding-top: 30%;
-    }
 
     .arrow {
         display: none;
     }
 
-    .about {
-        margin-top: 20%;
-    }
 
 
     .nav-menu {
