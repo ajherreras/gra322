@@ -6,6 +6,10 @@ body {
     background-color:#fafafa;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 h1 {
     font-size: 50px;
     font-weight:700;
@@ -59,7 +63,6 @@ a:hover {
 
 .logo {
     max-height:48px;
-    position: fixed;
 }
 
 .outer {
@@ -103,14 +106,9 @@ ul {
 
 .navbar {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     justify-content: space-between;
     align-items: center;
     padding: 2em 1em;
-    z-index: 5;
 }
 
 
@@ -131,6 +129,7 @@ ul {
 .nav-menu {
     display: flex;
     justify-content: space-between;
+    padding: 2em;
 }
 
 .nav-item {
@@ -144,6 +143,53 @@ ul {
 
 
 /* END Navigation Styling */
+
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.arrow-first {
+    animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+.arrow:before, .arrow:after {
+    background: #d0d0d0;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+}
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+@keyframes arrow-movement {
+    0% {
+        opacity: 0;
+        top: 85%;
+   }
+    70% {
+        opacity: 1;
+   }
+    100% {
+        opacity: 0;
+   }
+}
+
 
 .btn {
     color: #ce1e4e;
@@ -177,7 +223,7 @@ ul {
 }
 
 .hero {
-    padding-top: 15%;
+    padding-top: 20%;
     height:80vh;
 }
 
@@ -190,6 +236,10 @@ ul {
     border-bottom: 1px solid #d0d0d0;
     padding: 1em 0;
     max-width:80%;
+}
+
+.about {
+    padding-top:10em;
 }
 
 .about h4 {
@@ -243,23 +293,27 @@ ul {
     padding-top:2em;
 }
 
-@media screen and (max-width:684px) {
+@media screen and (max-width:770px) {
 
 
     .nav-menu {
         position: fixed;
-        opacity: 0;
-        bottom: 25%;
+        left: -100%;
+        top: 5rem;
         flex-direction: column;
         background-color: #fafafa;
         width: 100%;
+        height: 75vh;
         transition: 0.2s ease-in-out;
-        padding:3em;
+        padding: 10em 3em;
         font-size: 1.25em;
+        z-index: 5;
+        transition: .5s ease-in-out;
     }
 
     .nav-menu.active {
-        opacity: 100%;
+        left: 0;
+        transition: .5s ease-in-out;
     }
 
     .nav-item {
@@ -286,7 +340,7 @@ ul {
 
 }
 
-@media screen and (min-width:684px) {
+@media screen and (min-width:770px) {
 
 
 
@@ -300,7 +354,7 @@ ul {
 
     .col-2-66 {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1.25fr 1fr;
     }
 
     .col-3 {
