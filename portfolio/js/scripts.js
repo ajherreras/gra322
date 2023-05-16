@@ -23,3 +23,4 @@ function closeMenu() {
 $(document).scroll(function() {
    $('#Logo').css({width: $(this).scrollTop() > 100? "80%":"100%"});
 });
+

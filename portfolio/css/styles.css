@@ -67,13 +67,19 @@ a:hover {
     display: block;
     z-index: 2;
     position: relative;
-    object-fit:cover;
+    object-fit:contain;
+}
+
+.logo img {
+    object-fit:contain;
 }
 
 #Logo {
     transition: width linear .2s;
-    object-fit:cover;
+    object-fit:contain;
 }
+
+
 
 .outer {
     max-width:1240px;
