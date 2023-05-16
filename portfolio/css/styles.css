@@ -71,7 +71,7 @@ a:hover {
 }
 
 .logo img {
-    object-fit:contain;
+    object-fit:scale-down;
 }
 
 #Logo {
