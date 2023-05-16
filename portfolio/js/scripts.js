@@ -1,5 +1,7 @@
 AOS.init();
 
+var rellax = new Rellax('.rellax');
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -17,18 +19,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-var onScrollHandler = function() {
-    var newImageUrl = yourImageElement.src;
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop > 100) {
-       newImageUrl = "img1.jpg"
-    }
-    if (scrollTop > 200) {
-       newImageUrl = "img2.jpg"
-    }
-    if (scrollTop > 300) {
-       newImageUrl = "img3.jpg"
-    }
-    yourImageElement.src = newImageUrl;
-  };
-  object.addEventListener ("scroll", onScrollHandler);
+
+$(document).scroll(function() {
+   $('#Logo').css({width: $(this).scrollTop() > 100? "80%":"100%"});
+});

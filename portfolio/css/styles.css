@@ -63,10 +63,14 @@ a:hover {
 }
 
 .logo {
-    max-height:48px;
+    max-height:40px;
     display: block;
     z-index: 2;
     position: relative;
+}
+
+#Logo {
+    transition: width linear .2s;
 }
 
 .outer {
@@ -98,7 +102,9 @@ ul {
   
 
 
-
+.logo img {
+    transition: all linear 0.3s;
+}
 
 
 
@@ -283,7 +289,7 @@ header {
 }
 
 .connection {
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .connection h2 {
@@ -421,7 +427,7 @@ header {
         gap: 1em;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
     }
 
     .hero-content .btn {
