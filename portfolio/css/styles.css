@@ -72,6 +72,7 @@ a:hover {
 
 .logo img {
     object-fit:scale-down;
+    background-position: left;
 }
 
 #Logo {
