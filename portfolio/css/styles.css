@@ -237,9 +237,9 @@ header {
     color:#ce1e4e;
 }
 
-
-
-
+.tagline {
+    width: 120%;
+}
 
 
 .hero-content h1 {
@@ -305,12 +305,21 @@ header {
 
 @media screen and (max-width:770px) {
 
+
+
     .hero-content {
         position:relative;
         margin-top: 50%;
         height: 75vh;
     }
 
+    .hero-content h1 {
+        max-width: 300px;
+    }
+
+    .hero .btn {
+        margin-bottom: 1em;
+    }
 
     .hero-img {
         max-width: 500px;
@@ -325,7 +334,9 @@ header {
         display: none;
     }
 
-
+.connection {
+    margin-top: 20%;
+}
 
     .nav-menu {
         position: fixed;
@@ -408,6 +419,11 @@ header {
         grid-template-columns: 1.25fr 1fr;
     }
 
+    .col-2-75 {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        }
+
     .col-3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -428,10 +444,6 @@ header {
         justify-content: center;
         align-items: center;
         height: 80vh;
-    }
-
-    .hero-content .btn {
-        margin-bottom: 1em;
     }
 
     .intro {
