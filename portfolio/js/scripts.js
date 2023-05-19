@@ -20,7 +20,24 @@ function closeMenu() {
 }
 
 
-$(document).scroll(function() {
-   $('#Logo').css({width: $(this).scrollTop() > 100? "80%":"100%"});
-});
 
+
+function myFunction(x) {
+  if (x.matches) { 
+
+    $(document).scroll(function() {
+        $('#Logo').css({width: $(this).scrollTop() > 100? "100%":"100%"});
+     });
+
+  } else {
+    
+    $(document).scroll(function() {
+        $('#Logo').css({width: $(this).scrollTop() > 100? "80%":"100%"});
+     });
+
+  }
+}
+
+var x = window.matchMedia("(max-width: 770px)")
+myFunction(x)
+x.addListener(myFunction)
