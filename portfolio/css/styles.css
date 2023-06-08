@@ -68,6 +68,7 @@ a:hover {
     z-index: 2;
     position: relative;
     object-fit:contain;
+    float: left;
 }
 
 .logo img {
