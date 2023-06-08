@@ -38,6 +38,6 @@ function myFunction(x) {
   }
 }
 
-var x = window.matchMedia("(max-width: 770px)")
+var x = window.matchMedia("(max-width: 1000px)")
 myFunction(x)
 x.addListener(myFunction)
